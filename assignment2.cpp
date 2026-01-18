@@ -92,9 +92,7 @@ int main() {
         }
 
         if (choice != 0) {
-            cout << "\nPress Enter to continue...";
-            cin.ignore();
-            cin.get();
+            system("pause");
         }
 
     } while (choice != 0);
@@ -209,7 +207,6 @@ void ScoreCalculator() {
 
             if (choice < 1 || choice > studentCount) {
                 cout << "Invalid selection. Try again.\n";
-                continue;
             }
 
             int studentIndex = choice - 1; //  to show correct index in array
